@@ -14,5 +14,11 @@ namespace ApiVersioningDemoInNet7.Controllers
         {
             return "Test method call successful";
         }
+
+        [HttpGet, Route("unchanged")]
+        public string Unchanged()
+        {
+            return "I remain unchanged across versions";
+        }
     }
 }
